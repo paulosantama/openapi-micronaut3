@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull
 @Schema(
 		name = 'Entidade'
 )
-class EntidadeDto {
+abstract class EntidadeDto {
 
 	@NotNull
 	private UUID id
