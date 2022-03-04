@@ -14,56 +14,16 @@ import javax.validation.constraints.NotNull
 class EntidadeDto {
 
 	@NotNull
-	private UUID id
+	UUID id
 
-	private Long tenantId
+	Long tenantId
 
-	private Integer version
-
-	@NotNull
-	private Date criadoEm
+	Integer version
 
 	@NotNull
-	private Date atualizadoEm
+	Date criadoEm
 
-	UUID getId() {
-		return id
-	}
-
-	void setId(UUID id) {
-		this.id = id
-	}
-
-	Long getTenantId() {
-		return tenantId
-	}
-
-	void setTenantId(Long tenantId) {
-		this.tenantId = tenantId
-	}
-
-	Integer getVersion() {
-		return version
-	}
-
-	void setVersion(Integer version) {
-		this.version = version
-	}
-
-	Date getCriadoEm() {
-		return criadoEm
-	}
-
-	void setCriadoEm(Date criadoEm) {
-		this.criadoEm = criadoEm
-	}
-
-	Date getAtualizadoEm() {
-		return atualizadoEm
-	}
-
-	void setAtualizadoEm(Date atualizadoEm) {
-		this.atualizadoEm = atualizadoEm
-	}
+	@NotNull
+	Date atualizadoEm
 
 }
